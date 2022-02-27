@@ -22,16 +22,16 @@ cp <frompath> <topath>
 ## move or rename files
 mv <frompath> <topath> 
 
-## search a file 
+## Search a file 
 locate -i *contains*this*
 
 -i: ignore cases
 
-## read and write to a file 
+## Read and write to a file 
 echo this is some text >> file.txt
 cat <filepath>
 
-## show disk spaces
+## Show disk spaces
 `$ df -m` 
 -m: in megabytes
 show folder size: `$ du <foldername>` 
@@ -40,14 +40,16 @@ show all file size: `$ ls -lah`
 ## system info 
 `$ uname -a`
 
-## make a file executable 
+## Make a file executable 
+```bash
 chmod +x numbers.py 
 --give root permission
 chmod 755 numbers.py
 or
 sudo chmod +x numbers.py
+```
 
-## hostname and ip 
+## Hostname and ip 
 ip address: hostname -I
 hostname: hostname 
 
@@ -57,7 +59,7 @@ vnstat
 ## Current process network usage 
 sudo nethogs
 
-## power off and reboot 
+## Power off and reboot 
 sudo halt
 sudo reboot 
 
@@ -66,11 +68,11 @@ wavemon
 
 
 ## Recursively delete all srt files
-find . -name "*.srt" -type f -delete
+`find . -name "*.srt" -type f -delete`
 
 
-## move all zip files to a subdirectory
-find . -name "*.zip" | xargs -I files mv files ./resources
+## Move all zip files to a subdirectory
+`find . -name "*.zip" | xargs -I files mv files ./resources`
 
 
 ## Open multiple links 
