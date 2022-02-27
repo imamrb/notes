@@ -41,11 +41,3 @@ sudo systemctl enable rabbitmq-server
 localhost:15672
 imam07
 abcdqrty
-
-## Git 
-
-Delete all remote branches which are not in remote 
-get fetch --prune
-
-Delete all local branches except master
-git branch | grep -v "master" | xargs git branch -D
