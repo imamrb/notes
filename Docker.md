@@ -16,3 +16,7 @@
 
 - `docker exec -it <container> <command>`
   - exec a command inside a container that is already running
+
+## Run rabbitmq in docker
+
+`docker run --hostname my-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management`

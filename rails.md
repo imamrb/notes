@@ -122,3 +122,20 @@ end
 
 ## For debugging with pry and Puma
 `WEB_CONCURRENCY=1 RAILS_MAX_THREADS=1 PORT=3000 rails s`
+
+## Install gem with errors
+
+```
+gem install pg -v '0.18.4' -- --with-cflags="-Wno-error=implicit-function-declaration"
+```
+
+## Bundle Analyzer
+
+```
+yarn add -D webpack-bundle-analyzer
+
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+environment.plugins.append('BundleAnalyzer' new BundleAnalyzerPlugin())
+
+# run ./bin/webpack-dev-server
+```
