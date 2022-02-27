@@ -119,6 +119,6 @@ def failed_checkin_rescuer(error)
  }
 end
 
-u# Create a user in postgres
-sudo -u postgres createuser <name> -s
 
+## For debugging with pry and Puma
+`WEB_CONCURRENCY=1 RAILS_MAX_THREADS=1 PORT=3000 rails s`

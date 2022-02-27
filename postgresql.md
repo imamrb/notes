@@ -16,24 +16,22 @@ sudo -u postgres psql
 
 ## DDL
 
-\du 
-
-## Drop User 
-DROP USER <username>;
-
-## See databases
+```bash
+sudo -u postgres createuser <name> -s ##Create a user in postgres
+```
 
 ```bash
-sudo -u postgres psql
+sudo -u postgres psql ## See databases
 
-# display all users =# \du
-# List all database =# \l
-# connect to database =# \c dbname
-# query : select * from users;
-#display all tables 
-\dt
+DROP USER <username>; ## Drop User
+
+\du # display all users 
+\l # List all database 
+\c dbname # connect to database =# 
+select * from users; # query 
+
+\dt #display all tables 
 \d
 
-## List all tables , indexes 
-\d <table_name>
+\d <table_name> ## List all tables , indexes 
 ```
