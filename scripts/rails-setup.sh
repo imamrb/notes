@@ -23,3 +23,5 @@ rbenv install 3.1.2
 rbenv global 3.1.2
 
 gem install bundler
+
+sudo apt-get install postgresql postgresql-contrib libpq-dev

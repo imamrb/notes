@@ -17,6 +17,6 @@ make install
 rm -rf ~/.openssl/openssl-1.1.1g/certs
 ln -s /etc/ssl/certs ~/.openssl/openssl-1.1.1g/certs
 
-rm ~/Downloads/openssl-1.1.1g
-
+cd
+rm -r ~/Downloads/openssl-1.1.1g
 # RUBY_CONFIGURE_OPTS=--with-openssl-dir=$HOME/.openssl/openssl-1.1.1g rbenv install 3.0.3
